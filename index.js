@@ -199,7 +199,7 @@ function populatePlayerPool(){
     for(let i = 0; i < players.length; i++){
         let p = document.createElement("div");
         let img = document.createElement("img");
-        img.src = `./champs/${players[i].icon}`
+        img.src = `champs/${players[i].icon}`
         img.classList.add("icon");
         p.append(img);
         let par = document.createElement("par");
@@ -306,7 +306,7 @@ class Particle {
         context.save();
         context.globalAlpha = this.opacity;
         context.translate(this.x,this.y);
-        emoteImage.src = `./emotes/${this.src}`;
+        emoteImage.src = `emotes/${this.src}`;
         context.drawImage(emoteImage, (-emoteImage.width / 4) * this.size, (-emoteImage.height / 4) * this.size, (emoteImage.width / 2) * this.size, (emoteImage.height / 2) * this.size);
         context.restore();
     }
