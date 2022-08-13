@@ -199,7 +199,7 @@ function populatePlayerPool(){
     for(let i = 0; i < players.length; i++){
         let p = document.createElement("div");
         let img = document.createElement("img");
-        img.src = `/champs/${players[i].icon}`
+        img.src = `./champs/${players[i].icon}`
         img.classList.add("icon");
         p.append(img);
         let par = document.createElement("par");
