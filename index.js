@@ -1,106 +1,207 @@
 const pool = document.getElementById("playerPool");
 let currentPlayer;
+//load this from json file later
 let players = [
     {
-        name: "Davis",
-        username: "hilovids",
-        roles: ["Jungle"],
-        champs: ["nunu", "mundo"]
+        "name": "Davis",
+        "username": "hilovids",
+        "roles": [
+            "Jungle",
+            "Sup"
+        ],
+        "champs": [
+            "nunu",
+            "mundo"
+        ],
+        "emote": "nun.png",
+        "icon": "wll.webp"
     },
     {
-        name: "Ethan",
-        username: "Governor021",
-        roles: ["Mid", "ADC"],
-        champs: ["lux", "ahri"]
+        "name": "Ethan",
+        "username": "Governor021",
+        "roles": [
+            "Mid",
+            "ADC"
+        ],
+        "champs": [
+            "lux",
+            "ahri"
+        ],
+        "emote": "lux.png",
+        "icon": "lux.webp"
     },
     {
-        name: "Riley",
-        username: "Rilesman725",
-        roles: ["Fill"],
-        champs: ["warwick", "swain"]
+        "name": "Riley",
+        "username": "Rilesman725",
+        "roles": [
+            "Fill"
+        ],
+        "champs": [
+            "warwick",
+            "swain"
+        ],
+        "emote": "warwick.png",
+        "icon": "warwick.webp"
     },
     {
-        name: "Woodz",
-        username: "IIWoodzII",
-        roles: ["Top"],
-        champs: ["kayle", "darius"]
+        "name": "Woodz",
+        "username": "IIWoodzII",
+        "roles": [
+            "Top"
+        ],
+        "champs": [
+            "kayle",
+            "darius"
+        ],
+        "emote": "kayle.png",
+        "icon": "kayle.webp"
     },
     {
-        name: "Pootis",
-        username: "Pootis",
-        roles: ["Sup", "Top"],
-        champs: ["urgot", "nautilus"]
+        "name": "Pootis",
+        "username": "Pootis",
+        "roles": [
+            "Sup",
+            "Top"
+        ],
+        "champs": [
+            "urgot",
+            "nautilus"
+        ],
+        "emote": "urgot.png",
+        "icon": "urgo.webp"
     },
     {
-        name: "Nick",
-        username: "birdwatcheryebo",
-        roles: ["Sup"],
-        champs: ["rell", "morgana"]
+        "name": "Nick",
+        "username": "birdwatcheryebo",
+        "roles": [
+            "Sup"
+        ],
+        "champs": [
+            "rell",
+            "morgana"
+        ],
+        "emote": "thumb.png",
+        "icon": "rell.webp"
     },
     {
-        name: "Lucas",
-        username: "Bluedog0159",
-        roles: ["Jungle"],
-        champs: ["zac"]
+        "name": "Lucas",
+        "username": "Bluedog0159",
+        "roles": [
+            "Jungle",
+            "Mid"
+        ],
+        "champs": [
+            "zac"
+        ],
+        "emote": "zac.webp",
+        "icon": "lean.webp"
     },
     {
-        name: "Joel",
-        username: "ResidentAndroid",
-        roles: ["Top", "Jungle"],
-        champs: ["irelia", "teemo"]
+        "name": "Joel",
+        "username": "ResidentAndroid",
+        "roles": [
+            "Top",
+            "ADC",
+            "Jungle"
+        ],
+        "champs": [
+            "irelia",
+            "teemo"
+        ],
+        "emote": "pendab.png",
+        "icon": "irelia.webp"
     },
     {
-        name: "Chet",
-        username: "ChetMcLovin",
-        roles: ["ADC"],
-        champs: ["tristana"]
+        "name": "Chet",
+        "username": "ChetMcLovin",
+        "roles": [
+            "Top",
+            "ADC"
+        ],
+        "champs": [
+            "tristana"
+        ],
+        "emote": "trist.png",
+        "icon": "trist.webp"
     },
     {
-        name: "Brooks",
-        username: "Self and Sea",
-        roles: ["ADC", "Mid"],
-        champs: ["tristana", "vayne"]
+        "name": "Brooks",
+        "username": "Self and Sea",
+        "roles": [
+            "ADC",
+            "Mid"
+        ],
+        "champs": [
+            "tristana",
+            "vayne"
+        ],
+        "emote": "vayne.png",
+        "icon": "vay.webp"
     },
     {
-        name: "Breezy",
-        username: "Breezycloud",
-        roles: ["ADC", "Mid"],
-        champs: ["zeri", "twitch"]
+        "name": "Breezy",
+        "username": "Breezycloud",
+        "roles": [
+            "ADC",
+            "Mid"
+        ],
+        "champs": [
+            "zeri",
+            "twitch"
+        ],
+        "emote": "fidpog.png",
+        "icon": "zeri.webp"
     },
     {
-        name: "Brandon",
-        username: "Biotichazard",
-        roles: ["Sup", "Top"],
-        champs: ["soraka", "ornn"]
+        "name": "Brandon",
+        "username": "Biotichazard",
+        "roles": [
+            "Top",
+            "Mid",
+            "Sup"
+        ],
+        "champs": [
+            "soraka",
+            "ornn"
+        ],
+        "emote": "ornn.png",
+        "icon": "ornn.webp"
     },
     {
-        name: "Billy",
-        username: "The_Lazy_Gam3r",
-        roles: ["Mid"],
-        champs: ["veigar", "seraphine"]
+        "name": "Billy",
+        "username": "The_Lazy_Gam3r",
+        "roles": [
+            "Fill"
+        ],
+        "champs": [
+            "veigar",
+            "seraphine"
+        ],
+        "emote": "bee.webp",
+        "icon": "seraphine.webp"
     },
     {
-        name: "Austin",
-        username: "Mirundaal",
-        roles: ["Fill"],
-        champs: ["shen","aurelion"]
-    },
+        "name": "Austin",
+        "username": "Mirundaal",
+        "roles": [
+            "Fill"
+        ],
+        "champs": [
+            "shen",
+            "aurelion"
+        ],
+        "emote": "amumu.webp",
+        "icon": "shen.webp"
+    }
 ];
 
 function populatePlayerPool(){
     for(let i = 0; i < players.length; i++){
         let p = document.createElement("div");
-        //players[i].champs.forEach(async (c) => {
-        //    let img = document.createElement("img");
-            //fetch(`https://league-of-legends-champions.p.rapidapi.com/champions/en-us?page=0&size=10&name=${c}`)
-	        //    .then(response => response.json())
-	        //    .then(response => {
-            //        console.log(response);
-            //        img.src = c[0].node.champion.profile_image.url;
-            //    })
-	        //    .catch(err => console.error(err));
-        //    p.append(img)
-        //});
+        let img = document.createElement("img");
+        img.src = `/champs/${players[i].icon}`
+        img.classList.add("icon");
+        p.append(img);
         let par = document.createElement("par");
         p.append(par);
         par.innerText = players[i].name;
@@ -116,6 +217,7 @@ function populatePlayerPool(){
     }
 }
 populatePlayerPool();
+
 const playerBoxes = Array.from(document.getElementsByClassName("playerBox"));
 playerBoxes.forEach((b) => {
     b.addEventListener("dragover", (event) => {
@@ -135,6 +237,9 @@ playerBoxes.forEach((b) => {
         else {
             newElement.classList.add("filledPlayerBox");
         }
+        let targetX = getOffset( event.target ).left + (event.target.offsetWidth / 2)
+        let targetY = getOffset( event.target ).top + (event.target.offsetHeight / 2)
+        spawnParticles(5, targetX, targetY, player.emote)
         newElement.innerHTML = createHTML(player);
         event.target.parentNode.replaceChild(newElement, event.target);
         document.getElementById(player.name).remove();
@@ -177,3 +282,81 @@ function createHTML(player){
     </div>
     `;
 }
+
+const emoteImage = new Image();
+const canvas = document.getElementById("canvas");
+const context = canvas.getContext("2d");
+let particleArray = [];
+const maxSize = 100;
+let xOffset = 300;
+let yOffset = 50;
+
+class Particle {
+    constructor(x,y,emote){
+        this.x = x + (Math.random() - .5) * xOffset;
+        this.y = y + (Math.random() * yOffset) - (yOffset / 2);
+        this.xMomentum = Math.random() * 1.2 - .6;
+        this.yMomentum = .5; //Math.random() * 2 - 1;
+        this.size = 1 + .5 * Math.random();
+        this.opacity = 1;
+        this.src = emote;
+    }
+
+    draw(){
+        context.save();
+        context.globalAlpha = this.opacity;
+        context.translate(this.x,this.y);
+        emoteImage.src = `./emotes/${this.src}`;
+        context.drawImage(emoteImage, (-emoteImage.width / 4) * this.size, (-emoteImage.height / 4) * this.size, (emoteImage.width / 2) * this.size, (emoteImage.height / 2) * this.size);
+        context.restore();
+    }
+
+    update(){
+        this.opacity -= 0.01;
+        this.size -= 0.01;
+        this.x += this.xMomentum;
+        this.y += this.yMomentum;
+    }
+}
+
+function spawnParticles(n,x,y,emote){
+    console.log(emote);
+    console.log(x);
+    console.log(y);
+    for(let i = 0; i < n; i++){
+        particleArray.push(new Particle(x,y,emote));
+    }
+    console.log(particleArray);
+}
+
+function animate(){
+    requestAnimationFrame(animate);
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    context.clearRect(0,0,canvas.width, canvas.height);
+    particleArray.forEach(function(particle){
+        particle.update();
+        particle.draw();
+    });
+    particleArray = particleArray.filter(function(particle){
+        return particle.opacity >= 0.05 && particle.size >= .15;
+    })
+}
+
+function init(){
+    particleArray = [];
+}
+
+function getOffset( el ) {
+    var _x = 0;
+    var _y = 0;
+    while( el && !isNaN( el.offsetLeft ) && !isNaN( el.offsetTop ) ) {
+          _x += el.offsetLeft - el.scrollLeft;
+          _y += el.offsetTop - el.scrollTop;
+          el = el.offsetParent;
+    }
+    return { top: _y, left: _x };
+}
+
+init();
+animate();
