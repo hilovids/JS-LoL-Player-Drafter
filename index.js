@@ -164,7 +164,7 @@ let players = [
             "soraka",
             "ornn"
         ],
-        "emote": "ornn.png",
+        "emote": "dongers.webp",
         "icon": "ornn.webp"
     },
     {
@@ -192,6 +192,33 @@ let players = [
         ],
         "emote": "amumu.webp",
         "icon": "shen.webp"
+    },
+    {
+        "name": "Chris",
+        "username": "shugo3000",
+        "roles": [
+            "Top"
+        ],
+        "champs": [
+            "garen"
+        ],
+        "emote": "gar.webp",
+        "icon": "garen.webp"
+    },
+    {
+        "name": "Wyatt",
+        "username": "WooT",
+        "roles": [
+            "Top",
+            "Mid",
+            "Jungle"
+        ],
+        "champs": [
+            "soraka",
+            "ornn"
+        ],
+        "emote": "ornn.png",
+        "icon": "xin.webp"
     }
 ];
 
