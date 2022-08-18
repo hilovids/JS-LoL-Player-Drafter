@@ -9,6 +9,21 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Figtree">
 </head>
 <body>
+    <div id="coinModal">
+        <div id="coin">
+            <div id="heads">
+                <img src="img/poro_bot.png">
+            </div>
+            <div id="tails">
+                <img src="img/poro_top.png">
+            </div>
+        </div>
+        <!-- <div class="winner"></div> -->
+        <div class="buttons">
+            <button id="flipButton" onclick=flipCoin()> Decide Your Fate </button>
+            <button id="closeButton" onclick=closeCoinFlip()> Close </button>
+        </div>
+    </div>
     <div id="draftContainer">
         <div class="redbg">
             <img class="teamImg" src="img/redbuff.webp">
@@ -31,6 +46,10 @@
     <img src="img/logo.png" id="logo">
     <h2 id="redName">Red Team</h2>
     <h2 id="caption">Players</h2>
+    <img id="coinIcon" src="img/coin.png" onclick=openCoinFlip()>
+    <a href="/bingo.html">
+        <img id="bingoIcon" src="img/bingo.png">
+    </a>
     <h2 id="blueName">Blue Team</h2>
     <div id="greenscreen"></div>
     <canvas id="canvas"></canvas>

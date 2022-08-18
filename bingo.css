@@ -1,0 +1,54 @@
+#logo{
+    width: 20%;
+    
+}
+
+#mainContent{
+    text-align: center;
+}
+
+#bingoGrid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    margin: 5%;
+    margin-top: 1%;
+    vertical-align: middle;
+}
+
+.gridItem{
+    height: 100px;
+    width: 15vw;
+    background-color: blanchedalmond;
+    margin: auto;
+    border-radius: 5px;
+    font-size: 80%;
+}
+
+.filledSpace{
+    color: whitesmoke;
+    background-color: rgb(152, 63, 63);
+}
+
+.pentaText{
+    font-family: 'Figtree';
+    font-weight: 700;
+    font-size: 50px;
+    color: rgb(232, 189, 83);
+    margin: 0%;
+}
+
+body{
+    background-image: url("https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc28d43095579c8b5/5d87c24e8d8a3163705e3070/summonersrift.jpg");
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#pentaFlex{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}

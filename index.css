@@ -197,3 +197,129 @@ h3{
     zoom: .6;
     position: sticky;
 }
+
+#coinIcon{
+    width: 30px;
+    position: absolute;
+    top: 53vh;
+    left: 48vw;
+    transform: translate(-50%, -50%);
+    color: rgb(232, 189, 83);
+}
+
+#bingoIcon{
+    width: 30px;
+    position: absolute;
+    top: 53vh;
+    left: 52vw;
+    transform: translate(-50%, -50%);
+    color: rgb(232, 189, 83);
+}
+
+#closeIcon{
+    width: 25px;
+    position: sticky;
+    margin-left: 90%;
+    margin-top: 2%;
+}
+
+#coinModal{
+    display: none;
+    position: fixed;
+    width: 800px;
+    height: 500px;
+    z-index: 1;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    top: 28vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#coin{
+    margin-top: 60px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+#heads,#tails{
+    position: absolute;
+    height: 100%;
+    left: 269px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#tails{
+    transform: rotateX(180deg);
+}
+
+@keyframes spin-tails {
+    0%{
+        transform: rotateX(0);
+    }
+
+    100%{
+        transform: rotateX(1980deg);
+    }
+}
+
+@keyframes spin-heads {
+    0%{
+        transform: rotateX(0);
+    }
+
+    100%{
+        transform: rotateX(2160deg);
+    }
+}
+
+#flipButton{
+    width: 150px;
+    padding: 15px 0;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Figtree';
+    font-weight: 700;
+    font-size: large;
+    background-color: rgb(232, 189, 83);
+    color: rgb(165, 106, 42);
+}
+
+#flipButton{
+    width: 150px;
+    padding: 15px 0;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Figtree';
+    font-weight: 700;
+    font-size: large;
+    background-color: rgb(232, 189, 83);
+    color: rgb(165, 106, 42);
+}
+
+#flipButton:disabled{
+    background-color: #e1e0ee;
+    border-color: #e1e0ee;
+    color: #101020;
+}
+
+#closeButton{
+    width: 150px;
+    padding: 15px 0;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Figtree';
+    font-weight: 700;
+    font-size: large;
+    background-color: rgb(232, 189, 83);
+    color: rgb(165, 106, 42);
+}

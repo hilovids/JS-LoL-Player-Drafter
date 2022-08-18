@@ -387,3 +387,39 @@ function getOffset( el ) {
 
 init();
 animate();
+
+function openCoinFlip(){
+    document.getElementById("coinModal").style.display = "block";
+    let coin = document.getElementById("coin");
+    coin.style.animation = "none";
+}
+
+function closeCoinFlip(){
+    document.getElementById("coinModal").style.display = "none";
+}
+
+function flipCoin(){
+    let coin = document.getElementById("coin");
+    let p = Math.random();
+
+    coin.style.animation = "none";
+
+    if(p > .5){
+        setTimeout(() => {
+            coin.style.animation = "spin-heads 3s forwards"
+        }, 100);
+    }
+    else {
+        setTimeout(() => {
+            coin.style.animation = "spin-tails 3s forwards"
+        }, 100);
+    }
+    disableButton();
+}
+function disableButton(){
+    let flipBtn = document.getElementById("flipButton");
+    flipBtn.disabled = true;
+    setTimeout(() => {
+        flipBtn.disabled = false;
+    },3000);
+}
