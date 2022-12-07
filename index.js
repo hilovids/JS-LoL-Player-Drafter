@@ -6,12 +6,11 @@ let players = [
         "name": "Davis",
         "username": "hilovids",
         "roles": [
-            "Jungle",
-            "Sup"
+            "Jungle"
         ],
         "champs": [
             "nunu",
-            "mundo"
+            "skarner"
         ],
         "emote": "nun.png",
         "icon": "wll.webp"
@@ -28,7 +27,7 @@ let players = [
             "ahri"
         ],
         "emote": "lux.png",
-        "icon": "lux.webp"
+        "icon": "ahri.jpg"
     },
     {
         "name": "Riley",
@@ -44,61 +43,22 @@ let players = [
         "icon": "warwick.webp"
     },
     {
-        "name": "Woodz",
-        "username": "IIWoodzII",
-        "roles": [
-            "Top"
-        ],
-        "champs": [
-            "kayle",
-            "darius"
-        ],
-        "emote": "kayle.png",
-        "icon": "kayle.webp"
-    },
-    {
-        "name": "Pootis",
-        "username": "Pootis",
-        "roles": [
-            "Sup",
-            "Top"
-        ],
-        "champs": [
-            "urgot",
-            "nautilus"
-        ],
-        "emote": "urgot.png",
-        "icon": "urgo.webp"
-    },
-    {
-        "name": "Nick",
-        "username": "birdwatcheryebo",
-        "roles": [
-            "Sup"
-        ],
-        "champs": [
-            "rell",
-            "morgana"
-        ],
-        "emote": "thumb.png",
-        "icon": "rell.webp"
-    },
-    {
         "name": "Lucas",
         "username": "Bluedog0159",
         "roles": [
             "Jungle",
-            "Mid"
+            "Mid",
+            "Sup"
         ],
         "champs": [
             "zac"
         ],
         "emote": "zac.webp",
-        "icon": "lean.webp"
+        "icon": "karthas.webp"
     },
     {
         "name": "Joel",
-        "username": "ResidentAndroid",
+        "username": "ResidentAndrood",
         "roles": [
             "Top",
             "ADC",
@@ -112,21 +72,8 @@ let players = [
         "icon": "irelia.webp"
     },
     {
-        "name": "Chet",
-        "username": "ChetMcLovin",
-        "roles": [
-            "Top",
-            "ADC"
-        ],
-        "champs": [
-            "tristana"
-        ],
-        "emote": "trist.png",
-        "icon": "trist.webp"
-    },
-    {
         "name": "Brooks",
-        "username": "Self and Sea",
+        "username": "EndlessMigration",
         "roles": [
             "ADC",
             "Mid"
@@ -151,21 +98,6 @@ let players = [
         ],
         "emote": "fidpog.png",
         "icon": "zeri.webp"
-    },
-    {
-        "name": "Brandon",
-        "username": "Biotichazard",
-        "roles": [
-            "Top",
-            "Mid",
-            "Sup"
-        ],
-        "champs": [
-            "soraka",
-            "ornn"
-        ],
-        "emote": "dongers.webp",
-        "icon": "ornn.webp"
     },
     {
         "name": "Billy",
@@ -194,31 +126,16 @@ let players = [
         "icon": "shen.webp"
     },
     {
-        "name": "Chris",
-        "username": "shugo3000",
+        "name": "Adam",
+        "username": "ProjectPickle",
         "roles": [
-            "Top"
+            "Fill"
         ],
         "champs": [
-            "garen"
+            "lux"
         ],
-        "emote": "gar.webp",
-        "icon": "garen.webp"
-    },
-    {
-        "name": "Wyatt",
-        "username": "WooT",
-        "roles": [
-            "Top",
-            "Mid",
-            "Jungle"
-        ],
-        "champs": [
-            "soraka",
-            "ornn"
-        ],
-        "emote": "ornn.png",
-        "icon": "xin.webp"
+        "emote": "lux.png",
+        "icon": "lux.webp"
     }
 ];
 
