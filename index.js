@@ -126,16 +126,16 @@ let players = [
         "icon": "shen.webp"
     },
     {
-        "name": "Adam",
-        "username": "ProjectPickle",
+        "name": "Evan",
+        "username": "EvgarJohnron",
         "roles": [
-            "Fill"
+            "Sup"
         ],
         "champs": [
-            "lux"
+            "teemo"
         ],
-        "emote": "lux.png",
-        "icon": "lux.webp"
+        "emote": "doge.png",
+        "icon": "teemo.webp"
     }
 ];
 
